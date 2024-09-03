@@ -9,6 +9,7 @@
     /* colors */
     --clr-white: hsl(0, 0%, 100%);
     --clr-pink-light: hsl(275, 100%, 97%);
+    --clr-pink-dark: hsl(281, 83%, 54%);
     --clr-purple-grayish: hsl(292, 16%, 49%);
     --clr-purple-dark: hsl(292, 42%, 14%);
 }
@@ -87,8 +88,7 @@ p {
             }
             &:hover,
             &:focus {
-                background-color: var(--clr-pink-light);
-                border-radius: 1rem;
+                color: var(--clr-pink-dark);
             }
         }
 
@@ -100,8 +100,7 @@ p {
     [open] {
         --padding: 0.5rem;
         summary {
-            background-color: var(--clr-pink-light);
-            border-radius: 1rem;
+                color: var(--clr-pink-dark);
             &::after {
                 content: url(/assets/images/icon-minus.svg);
             }
