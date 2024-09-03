@@ -39,8 +39,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/hadodev/FaqAccordion.git)
-- Live Site URL: [Add live site URL here](https://hadodev-frontendmentor-faqaccordion.netlify.app)
+- Solution URL: [Solution URL here](https://github.com/hadodev/FaqAccordion.git)
+- Live Site URL: [Live site URL here](https://hadodev-frontendmentor-faqaccordion.netlify.app)
 
 ## My process
 
