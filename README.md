@@ -56,8 +56,8 @@ Users should be able to:
 ### Useful resources
 
 - [CSS reset](https://piccalil.li/blog/a-more-modern-css-reset/) - Modern CSS reset.
-- [Image compressor] (https://imagecompressor.com/) - This online image optimizer uses a smart combination of the best optimization and lossy compression algorithms to shrink JPEG, GIF and PNG images to the minimum possible size while keeping the required level of quality.
-- [@font-face generator] (https://transfonter.org/) - Modern and simple css @font-face generator.
+- [Image compressor](https://imagecompressor.com/) - This online image optimizer uses a smart combination of the best optimization and lossy compression algorithms to shrink JPEG, GIF and PNG images to the minimum possible size while keeping the required level of quality.
+- [@font-face generator](https://transfonter.org/) - Modern and simple css @font-face generator.
 
 
 ## Author
