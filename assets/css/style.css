@@ -1,0 +1,120 @@
+@import url(_font.css);
+@import url(_reset.css);
+
+:root {
+    /* fonts */
+    --font-weight: 400;
+    --font-stretch: 100%;
+
+    /* colors */
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-pink-light: hsl(275, 100%, 97%);
+    --clr-purple-grayish: hsl(292, 16%, 49%);
+    --clr-purple-dark: hsl(292, 42%, 14%);
+}
+
+body {
+    display: grid;
+
+    font-family: "Work Sans", sans-serif;
+
+    background: url("../images/background-pattern-desktop.svg") no-repeat top/100%, var(--clr-pink-light);
+
+    transition: all 2s ease;
+    place-content: center;
+    font-variation-settings: "wght" var(--font-weight), "wdth" var(--font-stretch);
+
+    @media (width <= 375px) {
+        background: url("../images/background-pattern-mobile.svg") no-repeat top/100%, var(--clr-pink-light);
+    }
+}
+
+p {
+    font-size: 1rem;
+}
+
+.card {
+    width: clamp(320px, 40vw, 600px);
+    margin: auto;
+    padding: 2rem;
+
+    background: var(--clr-white);
+    border-radius: 1rem;
+
+    h2 {
+        margin: 0;
+
+        color: var(--clr-purple-dark);
+        font-weight: 700;
+        font-size: 3rem;
+        padding-block: 1rem;
+
+        &::before {
+            vertical-align: middle;
+
+            content: url(../images/icon-star.svg);
+            padding-inline-end: 1rem;
+        }
+    }
+
+    details {
+        color: var(--clr-purple-grayish);
+        padding-block: 0.5rem;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--clr-pink-light);
+        }
+
+        summary {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.5rem;
+
+            color: var(--clr-purple-dark);
+            font-weight: 600;
+            font-size: 1rem;
+
+            cursor: pointer;
+
+            &::marker {
+                content: "";
+            }
+            &::after {
+                color: var(--clr-pink-light);
+
+                content: url(/assets/images/icon-plus.svg);
+            }
+            &:hover,
+            &:focus {
+                background-color: var(--clr-pink-light);
+                border-radius: 1rem;
+            }
+        }
+
+        p {
+            padding: 0.5rem;
+        }
+    }
+
+    [open] {
+        --padding: 0.5rem;
+        summary {
+            background-color: var(--clr-pink-light);
+            border-radius: 1rem;
+            &::after {
+                content: url(/assets/images/icon-minus.svg);
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-block: 0.5rem;
+
+    a {
+        color: var(--clr-purple-grayish);
+    }
+}
