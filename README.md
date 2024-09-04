@@ -62,7 +62,7 @@ Users should be able to:
 
 ## Author
 
-- GitHub - [Hado Dev](https://piccalil.li/blog/a-more-modern-css-reset/)
+- GitHub - [Hado Dev](https://github.com/hadodev)
 - Frontend Mentor - [@hadodev](https://www.frontendmentor.io/profile/yourusername)
 
 
